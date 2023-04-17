@@ -23,7 +23,7 @@ const Download = () => {
         <div className="cards_wrap" id="main">
           {data.map((element) => {
             return (
-              <div className="card_item">
+              <div className="card_item" key={element.CodeName}>
                 <div className="card_inner">
                   <img
                     src={"images/Desk.jpg"}

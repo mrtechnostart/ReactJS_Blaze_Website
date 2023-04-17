@@ -1,0 +1,120 @@
+.downPage {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container1 {
+  max-width: 1170px;
+  margin: auto;
+}
+.row1 {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+ul {
+  list-style: none;
+}
+.downPage {
+  background-color: #000000;
+  padding: 70px 0;
+}
+.downPage-child {
+  width: 25%;
+  padding: 0 15px;
+}
+.downPage-child h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.downPage-child h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #3379d4;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.downPage-child ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.downPage-child ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.downPage-child ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.downPage-child .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.downPage-child .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+.downPage-bottom {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: -100px;
+  background-color: black;
+}
+.downPage-bottom p {
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+}
+.downPage-bottom p a {
+  text-decoration: none;
+  color: #3379d4;
+}
+@media (max-width: 490px) {
+  .downPage-bottom p {
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+  }
+}
+
+@media (max-width: 600px) {
+  .downPage-bottom p {
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+  }
+  .downPage-child h4 {
+    font-size: 14px;
+  }
+  .downPage-child ul li a {
+    font-size: 14px;
+  }
+  .downPage-child .social-links a {
+    height: 0px;
+    width: 0px;
+    background-color: black;
+  }
+  .social-links {
+    word-spacing: 10px;
+  }
+}

@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+/blaze_Website
 .pnp.js
 
 # testing

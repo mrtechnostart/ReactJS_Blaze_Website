@@ -18,7 +18,7 @@ const Navbar = () => {
 
       <div
         className="offcanvas offcanvas-start"
-        tabindex="-1"
+        tabIndex="-1"
         id="sidebar"
         aria-labelledby="sidebarLabel"
       >

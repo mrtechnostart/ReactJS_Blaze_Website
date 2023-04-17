@@ -17,7 +17,8 @@ const Download = () => {
   }, []);
   return (
     <>
-      <NavBar />
+    <NavBar />
+    {data.length === 0?<div className="container">Loading</div>: <>
       <div className="wrapper">
         <div className="cards_wrap" id="main">
           {data.map((element) => {
@@ -56,7 +57,8 @@ const Download = () => {
           })}
         </div>
       </div>
-    </>
+   </>
+}</>
   );
 };
 

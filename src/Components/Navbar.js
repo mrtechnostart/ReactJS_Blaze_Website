@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light px-lg-5">
@@ -36,57 +36,41 @@ const Navbar = () => {
         <div className="offcanvas-body">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/">
                 Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/features">
+                Features
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/screenshot">
+                Screenshot
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/download">
+                Downloads
+              </Link>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="https://github.com/ProjectBlaze/maintainership/">
+                Maintainership
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
-                Link
+              <a className="nav-link" href="https://github.com/ProjectBlaze/">
+                Source
               </a>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="/"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a className="dropdown-item" href="/">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link disabled"
-                href="/"
-                tabindex="-1"
-                aria-disabled="true"
-              >
-                Disabled
+              <a className="nav-link" href="https://github.com/ProjectBlaze/official_devices/blob/12.1/changelog.md">
+                Changelog
               </a>
             </li>
+
           </ul>
         </div>
       </div>

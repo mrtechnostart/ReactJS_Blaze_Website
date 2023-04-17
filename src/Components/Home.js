@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import "./Stylesheet/Home.css";
-
+import {Link} from 'react-router-dom';
 const Home = () => {
   return (
     <div className="master">
@@ -15,11 +15,11 @@ const Home = () => {
           </h2>
           <h3 className="headerh3">An AOSP Based Operating System</h3>
           <p>All your needs are satisfied here!</p>
-          <a href="download.html" style={{ textDecoration: "none" }}>
+          <Link to="/download" style={{ textDecoration: "none" }}>
             <button type="button" className="downloadBtn">
               Download Now <img src={"images/arrow.png"} alt="arrow"/>
             </button>
-          </a>
+          </Link>
         </div>
         <div className="child-2 text-center my-5 my-md-0 order-md-2 order-1">
           <img src={"images/device.png"} alt="Device" className="controller" />

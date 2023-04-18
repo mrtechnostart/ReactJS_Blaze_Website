@@ -36,6 +36,7 @@ const Download = () => {
                     <a
                       href={element["Support Group"]}
                       target="_blank"
+                      rel="noreferrer"
                       style={{ textDecoration: "none", color: "#b6c0c2" }}
                     >
                       @{element.UserName}

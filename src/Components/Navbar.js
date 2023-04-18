@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
+  const [offcanvasOpen, setOffcanvasOpen] = useState(false);
+
+  const toggleOffcanvas = () => {
+    setOffcanvasOpen((prevState) => !prevState);
+  };
+
+  const handleLinkClick = () => {
+    setOffcanvasOpen(false);
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light px-lg-5">
       <div className="container-fluid d-flex">
@@ -8,16 +19,14 @@ const Navbar = () => {
         <button
           className="navbar-toggler ms-auto"
           type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#sidebar"
-          aria-controls="sidebar"
+          onClick={toggleOffcanvas}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
       </div>
 
       <div
-        className="offcanvas offcanvas-start"
+        className={`offcanvas offcanvas-start ${offcanvasOpen ? "show" : ""}`}
         tabIndex="-1"
         id="sidebar"
         aria-labelledby="sidebarLabel"
@@ -29,29 +38,29 @@ const Navbar = () => {
           <button
             type="button"
             className="btn-close text-reset"
-            data-bs-dismiss="offcanvas"
+            onClick={toggleOffcanvas}
             aria-label="Close"
           ></button>
         </div>
         <div className="offcanvas-body">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/" onClick={handleLinkClick}>
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/features">
+              <Link className="nav-link" to="/features" onClick={handleLinkClick}>
                 Features
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/screenshot">
+              <Link className="nav-link" to="/screenshot" onClick={handleLinkClick}>
                 Screenshot
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/download">
+              <Link className="nav-link" to="/download" onClick={handleLinkClick}>
                 Downloads
               </Link>
             </li>
@@ -70,7 +79,6 @@ const Navbar = () => {
                 Changelog
               </a>
             </li>
-
           </ul>
         </div>
       </div>

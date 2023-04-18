@@ -5,6 +5,7 @@
 /.pnp
 /blaze_Website
 .pnp.js
+/build
 
 # testing
 /coverage

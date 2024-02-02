@@ -18,7 +18,7 @@ const Download = () => {
   return (
     <>
     <NavBar />
-    {data.length === 0?<div className="container">Loading</div>: <>
+    {data.length === 0?<div className="container" style={{minHeight:"70vh"}}>Loading</div>: <>
       <div className="wrapper">
         <div className="cards_wrap" id="main">
           {data.map((element) => {

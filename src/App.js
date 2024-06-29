@@ -53,6 +53,7 @@ function App() {
             <Footer key="footer" />,
           ]}
         />
+        
         <Route
           path="/privacypolicy"
           element={[

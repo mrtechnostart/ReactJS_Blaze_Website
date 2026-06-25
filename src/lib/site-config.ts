@@ -25,7 +25,7 @@ export const siteConfig = {
   tagline: "An AOSP-based operating system",
   description:
     "Project Blaze is an open-source, AOSP-based custom Android ROM that pairs a near-stock experience with deep customization, blazing performance and long battery life.",
-  url: "https://www.projectblaze.live",
+  url: "https://www.projectblaze.co.in",
   androidVersion: "Android 15",
   links: {
     telegram: "https://t.me/projectblaze",

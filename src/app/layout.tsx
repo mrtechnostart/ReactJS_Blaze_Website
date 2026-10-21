@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -58,6 +59,12 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
         </div>
+        <Script
+          src="https://app.trfyx.com/script.js"
+          data-website-id="ecc68nr7g2z8"
+          data-domain="projectblaze.co.in"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

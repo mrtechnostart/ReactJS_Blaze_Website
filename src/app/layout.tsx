@@ -61,7 +61,7 @@ export default function RootLayout({
         </div>
         <Script
           src="https://app.trfyx.com/script.js"
-          data-website-id="ecc68nr7g2z8"
+          data-website-id="rfq9ebwn7rc7"
           data-domain="projectblaze.co.in"
           strategy="afterInteractive"
         />

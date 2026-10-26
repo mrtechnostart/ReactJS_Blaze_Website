@@ -60,8 +60,8 @@ export default function RootLayout({
           <Footer />
         </div>
         <Script
-          src="https://app.trfyx.com/script.js"
-          data-website-id="rfq9ebwn7rc7"
+          src="https://tracking.projectblaze.co.in/script.js"
+          data-website-id="ecc68nr7g2z8"
           data-domain="projectblaze.co.in"
           strategy="afterInteractive"
         />

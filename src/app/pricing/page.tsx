@@ -68,6 +68,8 @@ export default async function PricingPage({
               </ul>
               <button
                 type="submit"
+                // Trfyx click goal: fires on click, before Stripe confirms payment.
+                {...(plan.id === "pro" && { "data-trfyx-goal": "pro_plan_clicked" })}
                 className={cn(
                   buttonVariants({ size: "lg", variant: plan.featured ? "default" : "outline" }),
                   "mt-8 w-full rounded-full text-base"

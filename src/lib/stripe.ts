@@ -12,7 +12,7 @@ export function getStripe(): Stripe {
   return client;
 }
 
-export type PlanId = "supporter" | "pro" | "lifetime";
+export type PlanId = "pro";
 
 export type Plan = {
   id: PlanId;
@@ -29,38 +29,19 @@ export type Plan = {
 
 export const plans: Plan[] = [
   {
-    id: "supporter",
-    name: "Supporter",
-    price: "$5",
-    cadence: "/month",
-    description: "Keep the builds coming and back the maintainers.",
-    perks: ["Supporter badge on Telegram", "Monthly dev updates", "Our eternal gratitude"],
-    lookupKey: "blaze_supporter_monthly",
-    mode: "subscription",
-  },
-  {
     id: "pro",
     name: "Pro",
     price: "$15",
     cadence: "/month",
     description: "For power users who want builds first.",
     perks: [
-      "Everything in Supporter",
       "Early access to beta builds",
       "Priority device support",
+      "Supporter badge on Telegram",
+      "Monthly dev updates",
     ],
     lookupKey: "blaze_pro_monthly",
     mode: "subscription",
     featured: true,
-  },
-  {
-    id: "lifetime",
-    name: "Lifetime",
-    price: "$99",
-    cadence: "one-time",
-    description: "Pay once, support Blaze forever.",
-    perks: ["Everything in Pro", "Lifetime perks, no renewals", "Name in the credits"],
-    lookupKey: "blaze_lifetime",
-    mode: "payment",
   },
 ];

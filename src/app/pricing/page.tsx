@@ -22,7 +22,7 @@ export default async function PricingPage({
     <>
       <PageHeader
         eyebrow="Support Blaze"
-        title="Pick a plan"
+        title="Go Pro"
         description="Help keep Project Blaze open, fast and maintained. Payments run in Stripe test mode."
       />
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
@@ -33,7 +33,7 @@ export default async function PricingPage({
               : "Something went wrong starting checkout. Please try again."}
           </p>
         )}
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="mx-auto grid max-w-md gap-6">
           {plans.map((plan) => (
             <form
               key={plan.id}

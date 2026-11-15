@@ -393,4 +393,20 @@ export const founders: Founder[] = [
       { label: "Telegram", href: siteConfig.links.telegram, icon: TelegramIcon },
     ],
   },
+  {
+    name: "Ram Pandey",
+    role: "Co-Founder & Developer",
+    bio: "Co-founder and developer at Project Blaze. Builds and maintains the website, looks after device support and drives day-to-day development across the project.",
+    initials: "RP",
+    image: "/ram.jpeg",
+    socials: [
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/mrtechnostart/",
+        icon: LinkedinIcon,
+      },
+      { label: "GitHub", href: "https://github.com/mrtechnostart", icon: GithubIcon },
+      { label: "Telegram", href: siteConfig.links.telegram, icon: TelegramIcon },
+    ],
+  },
 ];

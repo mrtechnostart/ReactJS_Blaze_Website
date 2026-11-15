@@ -9,11 +9,11 @@ export function Founders() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="The people behind Blaze"
-          title="Meet the founder"
+          title="Meet the founders"
           description="Project Blaze is led by a small, passionate team committed to a fast, clean and open Android experience."
         />
 
-        <div className="mx-auto mt-14 grid max-w-2xl gap-6">
+        <div className="mx-auto mt-14 grid max-w-4xl gap-6 sm:grid-cols-2">
           {founders.map((founder, i) => (
             <Reveal key={founder.name} delay={i * 0.08}>
               <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-card p-7">

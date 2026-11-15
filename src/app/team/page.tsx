@@ -7,7 +7,7 @@ import { CTA } from "@/components/sections/cta";
 export const metadata: Metadata = {
   title: "Team",
   description:
-    "Meet the founders and community behind Project Blaze — Ram Pandey and Aditya Pratap Singh, plus the maintainers keeping builds alive.",
+    "Meet Project Blaze founder Aditya Pratap Singh and the community of maintainers keeping builds alive.",
 };
 
 export default function TeamPage() {
